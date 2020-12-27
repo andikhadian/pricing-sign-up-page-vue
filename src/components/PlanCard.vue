@@ -36,7 +36,7 @@
           <div class="font-medium">
             <span class="text-3xl font-bold">${{ price }}</span>
             <span class="mx-1">/</span>
-            <span>month</span>
+            <span>{{ dates }}</span>
           </div>
         </div>
         <div class="px-14 mt-4 md:mt-0 md:w-2/3">
@@ -66,6 +66,9 @@ export default {
             type: String,
         },
         price: {
+            type: String,
+        },
+        dates: {
             type: String,
         },
         lists: {

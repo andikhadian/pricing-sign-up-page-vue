@@ -50,6 +50,8 @@ export default {
           type: 'Starter',
           priceMonthly: '119',
           priceYearly: '219',
+          datesMonthly: 'month',
+          datesYearly: 'year',
           lists: [
             '5,000 download / month',
             'Unlimited shows and episodes',
@@ -60,6 +62,8 @@ export default {
           type: 'Professional',
           priceMonthly: '149',
           priceYearly: '249',
+          datesMonthly: 'month',
+          datesYearly: 'year',
           lists: [
             '15,000 download / month',
             'Unlimited shows and episodes',
@@ -70,6 +74,8 @@ export default {
           type: 'Business',
           priceMonthly: '199',
           priceYearly: '299',
+          datesMonthly: 'month',
+          datesYearly: 'year',
           lists: [
             '50,000 download / month',
             'Unlimited shows and episodes',

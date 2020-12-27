@@ -9,6 +9,9 @@
         :price="
           planSelected === 'Monthly' ? item.priceMonthly : item.priceYearly
         "
+        :dates="
+          planSelected === 'Monthly' ? item.datesMonthly : item.datesYearly
+        "
         :lists="item.lists"
         @click="selectorChange(index)"
       ></plan-card>
