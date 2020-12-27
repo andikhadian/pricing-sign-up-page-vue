@@ -9,14 +9,19 @@
       <div class="flex justify-between items-center" @click="switchTheme">
         <!-- <h2>Switch Theme</h2> -->
         <div
-          class=" w-14 h-8 flex items-center rounded-full p-2 pr-3 duration-300 ease-in-out"
-          :class="toggleActive ? 'bg-white' : 'bg-navy-dark'"
+          class="border-2 w-14 h-8 flex items-center rounded-full px-1 duration-600 ease-in-out"
+          :class="{
+            'border-white' : toggleActive,
+            'bg-white' : !toggleActive,
+            'border-navy-dark' : !toggleActive,
+            'bg-navy-dark' : toggleActive,
+          }"
         >
           <div
             class="w-5 h-5 rounded-full shadow-md transform duration-300 ease-in-out"
             :class="{
-              'bg-navy-dark': toggleActive,
-              'bg-white': !toggleActive,
+              'bg-navy-dark': !toggleActive,
+              'bg-yellow': toggleActive,
               'translate-x-6': toggleActive,
             }"
           ></div>
